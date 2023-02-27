@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <script>
+      //escopos: global, função, bloco
+      const SERIE = 'Jane The Virgin';
+      console.log('bloco: ', SERIE);
+
+      function escopoFuncao() {
+        if (true) {
+          if (true) {
+            const SERIE = 'The Walking Dead';
+            console.log('bloco dentro da funcao: ', SERIE);
+          }
+        }
+        console.log('global: ', SERIE);
+      }
+
+      escopoFuncao();
+
+      {
+      }
+    </script>
+  </body>
+</html>
