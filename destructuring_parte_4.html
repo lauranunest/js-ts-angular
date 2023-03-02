@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <div id="teste"></div>
+    <script>
+      //array
+      let arr = [10, 20, 30, 40];
+      let [a, f, ...x] = arr; //posição 0 na variavel a, posição 1 na variavel f e todas as outras posições na variavel x
+      // console.log(a, f, x);
+
+      let obj = { a: 10, b: 20, c: 30, d: 40 };
+      let { a: p, c: h, ...resto } = obj;
+      console.log(p, h, resto);
+    </script>
+  </body>
+</html>
