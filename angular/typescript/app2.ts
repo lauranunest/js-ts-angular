@@ -1,5 +1,5 @@
 class Carro {
-  private modelo: string;
+  public modelo: string;
   private numeroDePortas: number;
   private velocidade: number = 0;
 
